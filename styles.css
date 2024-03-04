@@ -1,1 +1,308 @@
 /* Write your CSS here! */
+/* Element selector */
+
+
+/* body {
+    margin: 8px;
+    display: block;
+    padding: 10px; 
+} */
+
+/* .container {
+    max-width: 662px;
+    padding: 0 20px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+body {
+    margin: 8px;
+    display: block;
+    padding: 10px; 
+} */
+
+/* .container {
+    max-width: 662px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+body {
+    margin: 8px;
+    display: block;
+    padding: 10px; 
+} */
+
+/* .container {
+    max-width: 662px;
+    margin: 0 auto; 
+    padding: 0 50px; 
+} */
+
+/* body {
+    margin: 8px;
+    display: block;
+    padding: 10px; 
+} */
+
+/* .container {
+    max-width: 662px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 8px 50px; 
+    display: block;
+    padding: 10px; 
+} */
+
+/* .container {
+    max-width: 662px;
+    display: flex;
+    justify-content: center; 
+}
+
+body {
+    margin: 8px; 
+    padding: 10px; 
+} */
+
+/* Global Styles */
+/* headings font and color styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display SC", serif; /* Use Playfair Display SC font */
+    color: #333333; /* Set text color to dark gray */
+}
+
+/* font and color styles- links, paragraphs, and list items */
+a, p, li {
+    font-family: "Lato", Arial, sans-serif; /* Use Lato font */
+    color: #4e4e4e; /* Set text color to a shade of gray */
+    font-size: 1em; /* Set font size to default */
+    line-height: 1.75em; /* Set line height */
+}
+
+/* links hover effect */
+a:hover {
+    text-decoration: none !important; /* Remove underline */
+    color: #333333 !important; /* Change text color on hover */
+    -webkit-transition: all 0.2s ease-in-out; /* Smooth transition for WebKit browsers */
+    -moz-transition: all 0.2s ease-in-out; /* Smooth transition for Firefox */
+    -ms-transition: all 0.2s ease-in-out; /* Smooth transition for Edge */
+    -o-transition: all 0.2s ease-in-out; /* Smooth transition for Opera */
+    transition: all 0.2s ease-in-out; /* Smooth transition */
+}
+
+/* Layout and Structure */
+/* container styles */
+.container {
+    margin: auto; /* Center container horizontally */
+    max-width: 662px; /* Set maximum width */
+    padding: 0 20px; /* Add padding */
+  }
+
+  /* responsive styles for small screens */
+  @media only screen and (max-width: 767px) {
+    .intro img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    footer {
+      text-align: center;
+    }
+  }
+
+  /* Component Styles */
+  /* main navigation styles */
+  .main-nav {
+    background: #f4f4f4; /* background color */
+    padding-top: 23px; /* top padding */
+  }
+  
+  .main-nav nav ul li a {
+    color: #a7a7a7; /* set link color */
+  }
+  
+  .main-nav nav ul li.active a {
+    color: #4d4d4d; /* Set active state link color */
+  }
+
+  /* styles specific sections */
+  .section.second {
+    margin-bottom: 90px; /* add bottom margin */
+  }
+  
+  .section .container {
+    position: relative; /* set container position */
+  }
+  
+  .section .container:after {
+    position: absolute;
+    content: url(../img/separator.png); /* add separator image */
+    left: 20px; /* set position */
+  }
+  
+  .section .container h1 {
+    text-transform: uppercase; /* convert text to uppercase */
+    margin-bottom: 30px; /* add bottom margin */
+    position: relative; /* set position */
+  }
+  
+  /* introduction styles */
+  .intro {
+    padding: 95px 0px 70px 0px; /* add padding */
+    overflow-x: hidden; /* hide horizontal overflow */
+  }
+  
+  #profile-picture {
+    max-width: 65%;
+    height: auto;
+}
+
+  .intro img {
+    width: 81px; /* set width */
+    height: 81; /* set height */
+    border-radius: 99px; /* set border radius */
+  }
+  
+  
+  .intro .wrap {
+    margin: 30px 0px; /* add margin */
+  }
+  
+  .intro h1:before {
+    position: absolute;
+    left: -264px; /* -220px; */
+    top: -150px;
+    font-size: 270px;
+    z-index: -1;
+    color: #f4f4f4;
+  }
+  
+  .intro h1 span {
+    font-size: 47px;
+  }
+  
+  .work .work-list {
+    margin-left: 0px;
+  }
+  
+  .work .work-list li {
+    list-style: none;
+    font-size: 0.9375em;
+    color: #8c8c8c;
+  }
+  
+  .work .work-list li a {
+    padding-bottom: 5px;
+    font-size: 1.1875em;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #b3b3b3;
+  }
+  
+  .work .work-list li a:hover {
+    border-bottom: 1px solid #333333;
+  }
+  
+  .skills .skill-list {
+    margin-left: 0px;
+  }
+  
+  .skills .skill-list li:first-child {
+    font-size: 0.9375em;
+    color: #8c8c8c;
+  }
+  
+  .quote {
+    background: url(../img/bg.jpg);
+    padding: 20px 10px; /* 20px top/bottom padding, 10px left/right padding */
+  }
+
+  /* Animations and Effects */
+  /* cursor animation styles */
+  .typed-cursor {
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+
+  /* Keyframe animation for cursor blinking */
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* 8. Other Stuff */
+/* set color for element ID 'about' */
+#about {
+    color: black; 
+}
+
+/* Class selector for funParagraph */
+.funParagraph {
+    color: green; /* required styling, text color to green */
+    font-size: 16px; /* Set font size */
+}
+
+/* ID selector */
+#mainHeading {
+    color: red; /* styling */
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
